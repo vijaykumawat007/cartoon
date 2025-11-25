@@ -1,0 +1,36 @@
+# CartoonCentral Robots.txt
+# Search Engine Crawling Rules
+
+# Allow all search engines
+User-agent: *
+Allow: /
+Allow: /index.html
+Allow: /css/
+Allow: /js/
+Allow: /images/
+Disallow: /admin/
+Disallow: /*.json$
+Disallow: /*.bak$
+Disallow: /backup/
+Crawl-delay: 1
+
+# Specific rules for Google
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Specific rules for Bing
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Block bad bots
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+# Sitemap location
+Sitemap: https://cartooncentral.com/sitemap.xml
+Sitemap: https://cartooncentral.com/sitemap-shows.xml
